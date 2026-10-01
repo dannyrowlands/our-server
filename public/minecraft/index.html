@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A friendly, creative Minecraft server for builders, explorers and families.">
+  <title>Our Server | Build, explore, play together</title>
+  <style>
+    :root { --ink:#17324d; --muted:#577087; --cream:#fffaf0; --paper:#fff; --sky:#e9f8ff; --blue:#2176ae; --green:#4d9a6a; --yellow:#ffd66b; --shadow:0 18px 40px rgba(39,83,109,.12); }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; color:var(--ink); background:var(--cream); font-family:ui-rounded,"Nunito","Trebuchet MS",system-ui,sans-serif; line-height:1.6; }
+    a { color:inherit; }
+    .wrap { width:min(1120px,calc(100% - 40px)); margin:0 auto; }
+    header { position:absolute; inset:0 0 auto; z-index:2; color:white; }
+    nav { display:flex; align-items:center; justify-content:space-between; padding:22px 0; }
+    .brand { display:inline-flex; align-items:center; gap:10px; font-weight:900; font-size:1.2rem; text-decoration:none; text-shadow:0 2px 12px rgba(0,0,0,.2); }
+    .brand-mark { display:grid; place-items:center; width:38px; height:38px; border-radius:12px; background:var(--yellow); color:var(--ink); box-shadow:0 5px 0 #d4a942; }
+    nav a:not(.brand) { font-weight:800; text-decoration:none; text-shadow:0 2px 12px rgba(0,0,0,.2); }
+    .hero { min-height:680px; display:grid; align-items:end; padding:150px 0 84px; background:linear-gradient(90deg,rgba(19,54,74,.78) 0%,rgba(19,54,74,.35) 45%,rgba(19,54,74,.08) 76%),url('/assets/our-server-hero.png') center/cover; }
+    .hero-copy { max-width:580px; color:white; }
+    .eyebrow { display:inline-block; margin:0 0 16px; padding:6px 13px; border-radius:999px; background:rgba(255,214,107,.95); color:var(--ink); font-size:.85rem; font-weight:900; letter-spacing:.08em; text-transform:uppercase; }
+    h1,h2,h3 { line-height:1.1; margin:0; }
+    h1 { max-width:630px; font-size:clamp(2.8rem,7vw,5.6rem); letter-spacing:-.05em; }
+    .hero p { max-width:550px; margin:22px 0 30px; font-size:clamp(1.1rem,2vw,1.35rem); }
+    .button { display:inline-block; padding:14px 21px; border-radius:14px; background:var(--yellow); color:var(--ink); font-weight:900; text-decoration:none; box-shadow:0 5px 0 #d4a942; transition:transform .15s ease,box-shadow .15s ease; }
+    .button:hover,.button:focus-visible { transform:translateY(-2px); box-shadow:0 7px 0 #d4a942; }
+    section { padding:88px 0; }
+    .section-heading { max-width:650px; margin-bottom:34px; }
+    .section-heading h2 { font-size:clamp(2rem,4vw,3.2rem); letter-spacing:-.04em; }
+    .section-heading p { margin:14px 0 0; color:var(--muted); font-size:1.1rem; }
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+    .card { padding:28px; background:var(--paper); border:1px solid #edf1ef; border-radius:22px; box-shadow:var(--shadow); }
+    .icon { display:grid; place-items:center; width:54px; height:54px; margin-bottom:20px; border-radius:17px; background:var(--sky); font-size:1.7rem; }
+    .card:nth-child(2) .icon { background:#fff2d0; } .card:nth-child(3) .icon { background:#e8f6e9; }
+    .card h3 { font-size:1.35rem; } .card p { margin:10px 0 0; color:var(--muted); }
+    .join { background:var(--sky); }
+    .join-box { display:grid; grid-template-columns:1.15fr .85fr; gap:35px; align-items:center; padding:clamp(28px,5vw,58px); border-radius:30px; background:var(--paper); box-shadow:var(--shadow); }
+    .join-box h2 { font-size:clamp(2rem,4vw,3.1rem); } .join-box p { color:var(--muted); }
+    .server-address { padding:22px; border:2px dashed #b7d9e7; border-radius:18px; background:#f7fcff; text-align:center; }
+    .server-address small { display:block; color:var(--muted); font-weight:800; } .server-address strong { display:block; margin-top:5px; font-size:1.25rem; }
+    .safety { background:var(--green); color:white; }
+    .safety-inner { display:flex; gap:24px; align-items:center; }
+    .safety .icon { flex:0 0 auto; margin:0; background:rgba(255,255,255,.2); } .safety h2 { font-size:1.8rem; } .safety p { margin:8px 0 0; color:#e6f6e7; }
+    footer { padding:28px 0; color:var(--muted); text-align:center; font-size:.95rem; }
+    @media (max-width:760px) { .wrap { width:min(100% - 28px,1120px); } .hero { min-height:700px; padding-bottom:58px; background-position:62% center; } .cards,.join-box { grid-template-columns:1fr; } section { padding:64px 0; } }
+  </style>
+</head>
+<body>
+  <header><div class="wrap"><nav aria-label="Main navigation"><a class="brand" href="/" aria-label="Our Server home"><span class="brand-mark">★</span> Our Server</a><a href="#join">How to join</a></nav></div></header>
+  <main>
+    <section class="hero"><div class="wrap hero-copy"><p class="eyebrow">A friendly place to play</p><h1>Build, explore, and play together.</h1><p>Welcome to Our Server — a cheerful world for creative builders, curious explorers, and families who love making memories together.</p><a class="button" href="#join">Come and see what’s here ↓</a></div></section>
+    <section><div class="wrap"><div class="section-heading"><h2>There’s room for every kind of player.</h2><p>Bring your best ideas, discover new places, and help make our world a lovely place to visit.</p></div><div class="cards">
+      <article class="card"><div class="icon" aria-hidden="true">🏡</div><h3>Make something brilliant</h3><p>Build a cosy home, a huge castle, or anything your imagination can dream up.</p></article>
+      <article class="card"><div class="icon" aria-hidden="true">🧭</div><h3>Go on an adventure</h3><p>Follow winding paths, find hidden corners, and see what lies just over the next hill.</p></article>
+      <article class="card"><div class="icon" aria-hidden="true">🤝</div><h3>Play kindly</h3><p>We look after one another, share the fun, and celebrate everyone’s creations.</p></article>
+    </div></div></section>
+    <section class="join" id="join"><div class="wrap join-box"><div><p class="eyebrow">Ready when you are</p><h2>How to join us</h2><p>Open Minecraft, choose Multiplayer, and add our server using the address supplied. If you’re new, ask a grown-up to help you get started.</p></div><div class="server-address"><small>Server address</small><strong>Speak to Jacob for details</strong></div></div></section>
+    <section class="safety"><div class="wrap safety-inner"><div class="icon" aria-hidden="true">💚</div><div><h2>Kindness makes the best adventures.</h2><p>Be respectful, keep personal information private, and tell a trusted grown-up if anything ever feels uncomfortable.</p></div></div></section>
+  </main>
+  <footer><div class="wrap">Made for building, exploring, and playing nicely together.</div></footer>
+</body>
+</html>
