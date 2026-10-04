@@ -32,4 +32,12 @@ class HomePageTest extends TestCase
 
         $response->assertInertia(fn ($page) => $page->where('status', 'Message received.'));
     }
+
+    public function test_the_homepage_does_not_include_the_contact_form(): void
+    {
+        $homepage = file_get_contents(resource_path('js/Components/MissionPanel.tsx'));
+
+        $this->assertIsString($homepage);
+        $this->assertStringNotContainsString('<form className="contact-form"', $homepage);
+    }
 }
